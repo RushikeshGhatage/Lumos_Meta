@@ -1,0 +1,36 @@
+:root {
+  //Fonts
+  --font1: "Montserrat", sans-serif;
+  --font2: "Quicksand", sans-serif;
+
+  //Color
+  --color0: #ffffff;
+  --color1: #000000;
+  --color2: #00ffe9;
+
+  //Gradients
+  --gradient1: linear-gradient(113.85deg, #8efbf2 -0.02%, #2bb9ad 92.54%);
+  --gradient2: linear-gradient(113.85deg, #55b7af -0.02%, #20988e 92.54%),
+    #ffffff;
+
+  //shadow
+  --textShadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  --boxShadow: drop-shadow(4px 4px 25px rgba(0, 0, 0, 0.25));
+}
+
+//Fonts
+$font1: var(--font1);
+$font2: var(--font2);
+
+//Colors
+$color0: var(--color0);
+$color1: var(--color1);
+$color2: var(--color2);
+
+//Gradients
+$gradient1: var(--gradient1);
+$gradient2: var(--gradient2);
+
+//shadow
+$textShadow: var(--textShadow);
+$boxShadow: var(--boxShadow);

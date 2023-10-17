@@ -1,0 +1,31 @@
+{
+  "short_name": "Lumos Labs",
+  "name": "Lumos Labs",
+  
+  "icons": [
+    {
+      "src": "lumos-logo.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "lumos-logo.ico",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "lumos-logo.ico",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "version" : 1,
+  "enableSceneOffline" : true,
+  "enableTexturesOffline" : true
+  
+
+}

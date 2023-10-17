@@ -1,0 +1,280 @@
+.Home {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/********* Canvas *********/
+#WebGLCanvas {
+  /* Code */
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#menuPanel {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas-div {
+  width: 100%;
+  height: 100%;
+}
+
+#startButton {
+  height: 50px;
+  width: 250px;
+  margin: -25px -100px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: 32px;
+}
+
+.mainDivMainCanvasComponent {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.loading-div {
+  /*code*/
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+
+  // background-color: aqua;
+  z-index: 2;
+}
+
+.loading-head {
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+  // background-image: url("../resources/loader_1.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  video{
+    width: 30%;
+    height: 50%;
+  }
+}
+
+.head {
+  color: white;
+  position: absolute;
+  display: flex;
+  left: 47%;
+  top: 48%;
+  font-size: 25px;
+}
+
+.popUpDiv {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  // opacity: 0.5;
+  // background-color: aqua;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+}
+
+// City Map PopUp
+.div-cityMap-mainContainer{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(161 156 156 / 40%);
+
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+
+
+}
+.div-map-closeButton{
+  height: 5%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  // background-color: rgb(157, 255, 0);
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.div-map-closeButton.classroom{
+  transform: translate(2vw, -47vh);
+}
+
+.div-map-closeButton.dailyFlash{
+  transform: translate(0vw, 5vh);
+}
+
+.div-map-closeButton.placement{
+  transform: translate(-5vw, -40vh);
+}
+
+.closeBtn{
+  height:95%;
+  width: 50px;
+  background-image: url("../resources/close_button.png");
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.div-selectedBook-container{
+  width: 240px;
+  position: absolute;
+  background: #00000030;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  display: block;
+  align-items: center;
+}
+.div-bookTexture{
+  width: 70%;
+  height: 75%;
+  visibility:hidden;
+  display: none;
+  background: green;
+}
+.div-SelectedBook{
+    color: white;
+}
+.div-bookName{
+  color: white;
+  font-size: 14px;
+}
+.topUp {
+  width: 100vw;
+  height: 100vh;
+  /* position: absolute; */
+  // background-color: aquamarine;
+  /* z-index: 1; */
+}
+
+.close {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  z-index: 1;
+  color: $color0;
+
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+
+.settings_button{
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  width: 10%;
+  height: 10%;
+  z-index: 1;
+  background: red;
+}
+
+.menu_btn{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 1vw;
+  top: 1vh;
+  width: 5vw;
+  height: 5vw;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  // border: 3px solid red;
+}
+
+.menu_btn_burger {
+  width: 50px;
+  height: 6px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu_btn_burger::before,
+.menu_btn_burger::after{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu_btn_burger::before {
+  transform: translateY(-16px);
+}
+
+.menu_btn_burger::after {
+  transform: translateY(16px);
+}
+
+.menu_btn.open .menu_btn_burger {
+  background: transparent;
+  box-shadow: none;
+  z-index: 99;
+}
+
+.menu_btn.open .menu_btn_burger::before {
+  transform: rotate(-225deg);
+  z-index: 99;
+}
+
+.menu_btn.open .menu_btn_burger::after {
+  transform: rotate(225deg);
+  z-index: 99;
+}
+
